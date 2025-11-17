@@ -14,3 +14,4 @@ if($connectar){
   die("error de conexion: " . mysql.conect.error()) ; 
 }
 ?>
+
