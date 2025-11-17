@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Pizzería Bella Italia</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="auth-page">
+    <div class="container">
+        <div class="header">
+            <div class="pizza-icon">🍕</div>
+            <h1>Bella Italia</h1>
+            <p>Únete a nuestra familia pizzera</p>
+        </div>
+        
+        <div class="form-container">
+            <div class="success-message" id="successMessage">
+                ¡Registro exitoso! Bienvenido a Bella Italia 🎉
+            </div>
+            
+            <form id="registroForm">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo *</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Juan Pérez">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico *</label>
+                    <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono *</label>
+                    <input type="tel" id="telefono" name="telefono" required placeholder="+54 261 123 4567">
+                </div>
+
+                <div class="form-group">
+                    <label for="direccion">Dirección de entrega *</label>
+                    <input type="text" id="direccion" name="direccion" required placeholder="Calle, Número, Piso/Depto">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Contraseña *</label>
+                    <input type="password" id="password" name="password" required placeholder="Mínimo 6 caracteres">
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirmar contraseña *</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required placeholder="Repite tu contraseña">
+                </div>
+
+                <button type="submit" class="btn-submit">Crear cuenta</button>
+
+                <div class="login-link">
+                    ¿Ya tienes cuenta? <a href="../html/login.html">Inicia sesión</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/register.js"></script>
+</body>
+</html>

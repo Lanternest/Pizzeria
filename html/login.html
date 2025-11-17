@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - Pizzería Bella Italia</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="auth-page">
+    <div class="container">
+        <div class="header">
+            <div class="pizza-icon">🍕</div>
+            <h1>Bella Italia</h1>
+            <p>Bienvenido de nuevo</p>
+        </div>
+        
+        <div class="form-container">
+            <div class="success-message" id="successMessage">
+                ¡Inicio de sesión exitoso! Redirigiendo... 🎉
+            </div>
+            
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="email">Correo electrónico *</label>
+                    <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Contraseña *</label>
+                    <input type="password" id="password" name="password" required placeholder="Ingresa tu contraseña">
+                </div>
+
+                <div class="form-group">
+                    <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+                </div>
+
+                <button type="submit" class="btn-submit">Iniciar sesión</button>
+
+                <div class="login-link">
+                    ¿No tienes cuenta? <a href="../html/register.html">Regístrate aquí</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../html/login.html"></script>
+</body>
+</html>
