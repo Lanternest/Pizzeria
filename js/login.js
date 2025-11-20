@@ -2,13 +2,12 @@ const form = document.getElementById('loginForm');
 const successMessage = document.getElementById('successMessage');
 
 form.addEventListener('submit', (e) => {
-    e.preventDefault();
-
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
     // Validación básica
     if (!email || !password) {
+        e.preventDefault();
         alert('Por favor, completa todos los campos.');
         return;
     }

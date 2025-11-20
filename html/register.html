@@ -19,10 +19,10 @@
                 ¡Registro exitoso! Bienvenido a Bella Italia 🎉
             </div>
             
-            <form id="registroForm">
+            <form id="registroForm" action="../PHP/regis.php" method="POST" >
                 <div class="form-group">
-                    <label for="nombre">Nombre completo *</label>
-                    <input type="text" id="nombre" name="nombre" required placeholder="Juan Pérez">
+                    <label for="nombreCompleto">Nombre completo *</label>
+                    <input type="text" id="nombreCompleto" name="nombreCompleto" required placeholder="Juan Pérez">
                 </div>
 
                 <div class="form-group">
@@ -32,7 +32,7 @@
 
                 <div class="form-group">
                     <label for="telefono">Teléfono *</label>
-                    <input type="tel" id="telefono" name="telefono" required placeholder="+54 261 123 4567">
+                    <input type="tel" id="telefono" name="telefono" required placeholder="261 123 4567">
                 </div>
 
                 <div class="form-group">
@@ -41,13 +41,13 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="password">Contraseña *</label>
-                    <input type="password" id="password" name="password" required placeholder="Mínimo 6 caracteres">
+                    <label for="contrasenia">Contraseña *</label>
+                    <input type="password" id="contrasenia" name="contrasenia" required placeholder="Mínimo 6 caracteres">
                 </div>
 
                 <div class="form-group">
-                    <label for="confirm-password">Confirmar contraseña *</label>
-                    <input type="password" id="confirm-password" name="confirm-password" required placeholder="Repite tu contraseña">
+                    <label for="confirm-contrasenia">Confirmar contraseña *</label>
+                    <input type="password" id="confirm-contrasenia" name="confirmar_contrasenia" required placeholder="Repite tu contraseña">
                 </div>
 
                 <button type="submit" class="btn-submit">Crear cuenta</button>

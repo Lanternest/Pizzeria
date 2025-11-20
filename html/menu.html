@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú - Pizzería Bella Italia</title>
+        <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="pizza-icon">🍕</span>
+                <span class="logo-text">Bella Italia</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../html/index.html">Inicio</a></li>
+                <li><a href="../html/menu.html">Menú</a></li>
+                <li><a href="../html/nosotros.html">Nosotros</a></li>
+                <li><a href="../html/contacto.html">Contacto</a></li>
+                <li><a href="../html/ubicacion.html">Encontranos</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="nav-btn" id="perfilBtn">
+                    <span>👤</span> Perfil
+                </button>
+                <button class="nav-btn cart-btn" id="carritoBtn">
+                    <span>🛒</span> Carrito
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="nav-btn logout-btn" id="logoutBtn">
+                    <span>🚪</span> Salir
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de Menú -->
+    <section id="menu" class="menu-section">
+        <div class="section-container">
+            <h2 class="section-title">Nuestras Pizzas</h2>
+            <p class="section-subtitle">Elaboradas con masa artesanal y los mejores ingredientes</p>
+            
+            <div class="menu-grid">
+                <!-- Pizza 1 -->
+                <div class="pizza-card">
+                    <div class="pizza-image">🍕</div>
+                    <h3>Margarita</h3>
+                    <p>Salsa de tomate, mozzarella fresca, albahaca y aceite de oliva</p>
+                    <div class="pizza-footer">
+                        <span class="price">$8.500</span>
+                        <button class="add-btn" data-name="Margarita" data-price="8500">Agregar</button>
+                    </div>
+                </div>
+
+                <!-- Pizza 2 -->
+                <div class="pizza-card">
+                    <div class="pizza-image">🍕</div>
+                    <h3>Pepperoni</h3>
+                    <p>Salsa de tomate, mozzarella y abundante pepperoni</p>
+                    <div class="pizza-footer">
+                        <span class="price">$9.500</span>
+                        <button class="add-btn" data-name="Pepperoni" data-price="9500">Agregar</button>
+                    </div>
+                </div>
+
+                <!-- Pizza 3 -->
+                <div class="pizza-card">
+                    <div class="pizza-image">🍕</div>
+                    <h3>Cuatro Quesos</h3>
+                    <p>Mozzarella, gorgonzola, parmesano y provolone</p>
+                    <div class="pizza-footer">
+                        <span class="price">$10.500</span>
+                        <button class="add-btn" data-name="Cuatro Quesos" data-price="10500">Agregar</button>
+                    </div>
+                </div>
+
+                <!-- Pizza 4 -->
+                <div class="pizza-card">
+                    <div class="pizza-image">🍕</div>
+                    <h3>Napolitana</h3>
+                    <p>Tomate, mozzarella, anchoas, ajo y orégano</p>
+                    <div class="pizza-footer">
+                        <span class="price">$9.000</span>
+                        <button class="add-btn" data-name="Napolitana" data-price="9000">Agregar</button>
+                    </div>
+                </div>
+
+                <!-- Pizza 5 -->
+                <div class="pizza-card">
+                    <div class="pizza-image">🍕</div>
+                    <h3>Vegetariana</h3>
+                    <p>Pimientos, champiñones, cebolla, aceitunas y tomate</p>
+                    <div class="pizza-footer">
+                        <span class="price">$8.800</span>
+                        <button class="add-btn" data-name="Vegetariana" data-price="8800">Agregar</button>
+                    </div>
+                </div>
+
+                <!-- Pizza 6 -->
+                <div class="pizza-card">
+                    <div class="pizza-image">🍕</div>
+                    <h3>Hawaiana</h3>
+                    <p>Jamón, piña, mozzarella y salsa de tomate</p>
+                    <div class="pizza-footer">
+                        <span class="price">$9.200</span>
+                        <button class="add-btn" data-name="Hawaiana" data-price="9200">Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

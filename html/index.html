@@ -15,10 +15,11 @@
                 <span class="logo-text">Bella Italia</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#menu">Menú</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="/html/index.html">Inicio</a></li>
+                <li><a href="/html/menu.html">Menú</a></li>
+                <li><a href="/html/nosotros.html">Nosotros</a></li>
+                <li><a href="/html/contacto.html">Contacto</a></li>
+                <li><a href="/html/ubicacion.html">Encontranos</a></li>
             </ul>
             <div class="nav-actions">
                 <button class="nav-btn" id="perfilBtn">
@@ -40,115 +41,15 @@
         <div class="hero-content">
             <h1 class="hero-title">La Auténtica Pizza Italiana</h1>
             <p class="hero-subtitle">Ingredientes frescos, recetas tradicionales, sabor incomparable</p>
-            <button class="hero-btn" onclick="document.getElementById('menu').scrollIntoView({behavior: 'smooth'})">
+            <button class="hero-btn" onclick="window.location.href='/html/menu.html'">
                 Ver Menú
             </button>
         </div>
     </section>
 
-    <!-- Sección de Menú -->
-    <section id="menu" class="menu-section">
-        <div class="section-container">
-            <h2 class="section-title">Nuestras Pizzas</h2>
-            <p class="section-subtitle">Elaboradas con masa artesanal y los mejores ingredientes</p>
-            
-            <div class="menu-grid">
-                <!-- Pizza 1 -->
-                <div class="pizza-card">
-                    <div class="pizza-image">🍕</div>
-                    <h3>Margarita</h3>
-                    <p>Salsa de tomate, mozzarella fresca, albahaca y aceite de oliva</p>
-                    <div class="pizza-footer">
-                        <span class="price">$8.500</span>
-                        <button class="add-btn" data-name="Margarita" data-price="8500">Agregar</button>
-                    </div>
-                </div>
+    
 
-                <!-- Pizza 2 -->
-                <div class="pizza-card">
-                    <div class="pizza-image">🍕</div>
-                    <h3>Pepperoni</h3>
-                    <p>Salsa de tomate, mozzarella y abundante pepperoni</p>
-                    <div class="pizza-footer">
-                        <span class="price">$9.500</span>
-                        <button class="add-btn" data-name="Pepperoni" data-price="9500">Agregar</button>
-                    </div>
-                </div>
-
-                <!-- Pizza 3 -->
-                <div class="pizza-card">
-                    <div class="pizza-image">🍕</div>
-                    <h3>Cuatro Quesos</h3>
-                    <p>Mozzarella, gorgonzola, parmesano y provolone</p>
-                    <div class="pizza-footer">
-                        <span class="price">$10.500</span>
-                        <button class="add-btn" data-name="Cuatro Quesos" data-price="10500">Agregar</button>
-                    </div>
-                </div>
-
-                <!-- Pizza 4 -->
-                <div class="pizza-card">
-                    <div class="pizza-image">🍕</div>
-                    <h3>Napolitana</h3>
-                    <p>Tomate, mozzarella, anchoas, ajo y orégano</p>
-                    <div class="pizza-footer">
-                        <span class="price">$9.000</span>
-                        <button class="add-btn" data-name="Napolitana" data-price="9000">Agregar</button>
-                    </div>
-                </div>
-
-                <!-- Pizza 5 -->
-                <div class="pizza-card">
-                    <div class="pizza-image">🍕</div>
-                    <h3>Vegetariana</h3>
-                    <p>Pimientos, champiñones, cebolla, aceitunas y tomate</p>
-                    <div class="pizza-footer">
-                        <span class="price">$8.800</span>
-                        <button class="add-btn" data-name="Vegetariana" data-price="8800">Agregar</button>
-                    </div>
-                </div>
-
-                <!-- Pizza 6 -->
-                <div class="pizza-card">
-                    <div class="pizza-image">🍕</div>
-                    <h3>Hawaiana</h3>
-                    <p>Jamón, piña, mozzarella y salsa de tomate</p>
-                    <div class="pizza-footer">
-                        <span class="price">$9.200</span>
-                        <button class="add-btn" data-name="Hawaiana" data-price="9200">Agregar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Nosotros -->
-    <section id="nosotros" class="about-section">
-        <div class="section-container">
-            <h2 class="section-title">Sobre Nosotros</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Tradición Italiana desde 1985</h3>
-                    <p>En Bella Italia, llevamos más de 35 años compartiendo la auténtica experiencia de la pizza italiana. Nuestra masa se prepara diariamente con ingredientes importados directamente de Italia, y cada pizza es elaborada por nuestros maestros pizzeros con dedicación y pasión.</p>
-                    <p>Creemos que una buena pizza es más que comida: es un momento de felicidad compartida con quienes más queremos.</p>
-                </div>
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <div class="stat-number">35+</div>
-                        <div class="stat-label">Años de experiencia</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">50k+</div>
-                        <div class="stat-label">Clientes felices</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Ingredientes frescos</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
     <!-- Sección Contacto -->
     <section id="contacto" class="contact-section">
@@ -245,6 +146,6 @@
         </div>
     </div>
 
-    <script src="../js/index.js"></script>
+    <!-- <script src="../js/index.js"></script> -->
 </body>
 </html>
