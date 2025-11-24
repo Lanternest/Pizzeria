@@ -77,48 +77,89 @@
         </div>
     </section>
 
-    <!-- Sección de Pizzas Destacadas -->
-    <section class="featured-section">
-        <div class="section-container">
-            <h2 class="section-title">Pizzas Más Populares</h2>
-            <p class="section-subtitle">Las favoritas de nuestros clientes</p>
-            <div class="featured-grid">
-                <div class="featured-card">
-                    <div class="featured-image">🍕</div>
-                    <div class="featured-content">
-                        <h3>Margarita Clásica</h3>
-                        <p>La original italiana con tomate, mozzarella y albahaca fresca</p>
-                        <div class="featured-footer">
-                            <span class="featured-price">$8.500</span>
-                            <button class="featured-btn" onclick="window.location.href='../html/menu.html'">Pedir Ahora</button>
+<!-- Sección de Pizzas Destacadas - CARRUSEL -->
+<section class="carousel-section">
+    <div class="section-container">
+        <h2 class="section-title">Pizzas Más Populares</h2>
+        <p class="section-subtitle">Haz click en cualquier pizza para ver el menú completo</p>
+        
+        <div class="carousel-container">
+            <div class="carousel-wrapper">
+                <div class="carousel-track">
+                    <!-- Slide 1 - Margarita -->
+                    <div class="carousel-slide">
+                        <img src="../img/pizza margarita.jpg" alt="Pizza Margarita" class="carousel-image">
+                        <div class="carousel-caption">
+                            <h3>Margarita Clásica</h3>
+                            <p>La original italiana con tomate, mozzarella y albahaca fresca</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2 - Pepperoni -->
+                    <div class="carousel-slide">
+                        <img src="../img/pizza pepperoni.jpeg" alt="Pizza Pepperoni" class="carousel-image">
+                        <div class="carousel-caption">
+                            <h3>Pepperoni Supreme</h3>
+                            <p>Cargada con abundante pepperoni y doble queso mozzarella</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 3 - Cuatro Quesos -->
+                    <div class="carousel-slide">
+                        <img src="../img/pizza 4 quesos.webp" alt="Pizza Cuatro Quesos" class="carousel-image">
+                        <div class="carousel-caption">
+                            <h3>Cuatro Quesos</h3>
+                            <p>Combinación perfecta de mozzarella, gorgonzola, parmesano y provolone</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 4 - Napolitana -->
+                    <div class="carousel-slide">
+                        <img src="../img/pizza napolitana.jpg" alt="Pizza Napolitana" class="carousel-image">
+                        <div class="carousel-caption">
+                            <h3>Napolitana</h3>
+                            <p>Tomate, mozzarella, anchoas, ajo y orégano al estilo tradicional</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 5 - Vegetariana -->
+                    <div class="carousel-slide">
+                        <img src="../img/pizza vegetariana.jpg" alt="Pizza Vegetariana" class="carousel-image">
+                        <div class="carousel-caption">
+                            <h3>Vegetariana</h3>
+                            <p>Pimientos, champiñones, cebolla, aceitunas y tomate fresco</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 6 - Hawaiana -->
+                    <div class="carousel-slide">
+                        <img src="../img/pizza hawaiana.jpg" alt="Pizza Hawaiana" class="carousel-image">
+                        <div class="carousel-caption">
+                            <h3>Hawaiana</h3>
+                            <p>Jamón, piña, mozzarella y salsa de tomate. Un clásico único</p>
                         </div>
                     </div>
                 </div>
-                <div class="featured-card">
-                    <div class="featured-image">🍕</div>
-                    <div class="featured-content">
-                        <h3>Pepperoni Supreme</h3>
-                        <p>Cargada con abundante pepperoni y doble queso mozzarella</p>
-                        <div class="featured-footer">
-                            <span class="featured-price">$9.500</span>
-                            <button class="featured-btn" onclick="window.location.href='../html/menu.html'">Pedir Ahora</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="featured-card">
-                    <div class="featured-image">🍕</div>
-                    <div class="featured-content">
-                        <h3>Cuatro Quesos</h3>
-                        <p>Combinación perfecta de mozzarella, gorgonzola, parmesano y provolone</p>
-                        <div class="featured-footer">
-                            <span class="featured-price">$10.500</span>
-                            <button class="featured-btn" onclick="window.location.href='../html/menu.html'">Pedir Ahora</button>
-                        </div>
-                    </div>
+                
+                <!-- Controles del carrusel -->
+                <div class="carousel-controls">
+                    <button class="carousel-btn carousel-prev">‹</button>
+                    <button class="carousel-btn carousel-next">›</button>
                 </div>
             </div>
+            
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+                <button class="indicator active"></button>
+                <button class="indicator"></button>
+                <button class="indicator"></button>
+                <button class="indicator"></button>
+                <button class="indicator"></button>
+                <button class="indicator"></button>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Sección de Testimonios -->
     <section class="testimonials-section">
@@ -211,6 +252,7 @@
         </div>
     </div>
 
-    <!-- <script src="../js/index.js"></script> -->
+    <script src="../js/index.js"></script>
+    <script src="../js/carousel.js"></script>
 </body>
 </html>
