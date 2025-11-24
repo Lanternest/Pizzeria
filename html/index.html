@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bella Italia - Pizzería</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" >
 </head>
 <body>
     <!-- Barra de navegación -->
@@ -15,11 +16,11 @@
                 <span class="logo-text">Bella Italia</span>
             </div>
             <ul class="nav-menu">
-                <li><a href="/html/index.html">Inicio</a></li>
-                <li><a href="/html/menu.html">Menú</a></li>
-                <li><a href="/html/nosotros.html">Nosotros</a></li>
-                <li><a href="/html/contacto.html">Contacto</a></li>
-                <li><a href="/html/ubicacion.html">Encontranos</a></li>
+                <li><a href="../html/index.html">Inicio</a></li>
+                <li><a href="../html/menu.html">Menú</a></li>
+                <li><a href="../html/nosotros.html">Nosotros</a></li>
+                <li><a href="../html/contacto.html">Contacto</a></li>
+                <li><a href="../html/ubicacion.html">Encontranos</a></li>
             </ul>
             <div class="nav-actions">
                 <button class="nav-btn" id="perfilBtn">
@@ -41,52 +42,116 @@
         <div class="hero-content">
             <h1 class="hero-title">La Auténtica Pizza Italiana</h1>
             <p class="hero-subtitle">Ingredientes frescos, recetas tradicionales, sabor incomparable</p>
-            <button class="hero-btn" onclick="window.location.href='/html/menu.html'">
+            <button class="hero-btn" onclick="window.location.href='../html/menu.html'">
                 Ver Menú
             </button>
         </div>
     </section>
 
-    
-
-    
-
-    <!-- Sección Contacto -->
-    <section id="contacto" class="contact-section">
+    <!-- Sección de Características -->
+    <section class="features-section">
         <div class="section-container">
-            <h2 class="section-title">Contáctanos</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <span class="contact-icon">📍</span>
-                        <div>
-                            <h4>Dirección</h4>
-                            <p>Av. San Martín 1234, Mendoza</p>
+            <h2 class="section-title">¿Por qué elegirnos?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🍅</div>
+                    <h3>Ingredientes Frescos</h3>
+                    <p>Seleccionamos los mejores ingredientes cada día para garantizar la máxima calidad y sabor en cada pizza.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍🍳</div>
+                    <h3>Maestros Pizzeros</h3>
+                    <p>Nuestro equipo de pizzeros expertos lleva más de 20 años perfeccionando el arte de la pizza italiana.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Entrega Rápida</h3>
+                    <p>Tu pizza caliente en tu puerta en menos de 30 minutos. Garantizado o tu pedido es gratis.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⭐</div>
+                    <h3>Satisfacción Garantizada</h3>
+                    <p>Miles de clientes satisfechos nos respaldan. Tu felicidad es nuestra prioridad número uno.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Pizzas Destacadas -->
+    <section class="featured-section">
+        <div class="section-container">
+            <h2 class="section-title">Pizzas Más Populares</h2>
+            <p class="section-subtitle">Las favoritas de nuestros clientes</p>
+            <div class="featured-grid">
+                <div class="featured-card">
+                    <div class="featured-image">🍕</div>
+                    <div class="featured-content">
+                        <h3>Margarita Clásica</h3>
+                        <p>La original italiana con tomate, mozzarella y albahaca fresca</p>
+                        <div class="featured-footer">
+                            <span class="featured-price">$8.500</span>
+                            <button class="featured-btn" onclick="window.location.href='../html/menu.html'">Pedir Ahora</button>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">📞</span>
-                        <div>
-                            <h4>Teléfono</h4>
-                            <p>+54 261 123 4567</p>
+                </div>
+                <div class="featured-card">
+                    <div class="featured-image">🍕</div>
+                    <div class="featured-content">
+                        <h3>Pepperoni Supreme</h3>
+                        <p>Cargada con abundante pepperoni y doble queso mozzarella</p>
+                        <div class="featured-footer">
+                            <span class="featured-price">$9.500</span>
+                            <button class="featured-btn" onclick="window.location.href='../html/menu.html'">Pedir Ahora</button>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">⏰</span>
-                        <div>
-                            <h4>Horarios</h4>
-                            <p>Lun - Dom: 12:00 - 00:00</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">✉️</span>
-                        <div>
-                            <h4>Email</h4>
-                            <p>info@bellaitalia.com</p>
+                </div>
+                <div class="featured-card">
+                    <div class="featured-image">🍕</div>
+                    <div class="featured-content">
+                        <h3>Cuatro Quesos</h3>
+                        <p>Combinación perfecta de mozzarella, gorgonzola, parmesano y provolone</p>
+                        <div class="featured-footer">
+                            <span class="featured-price">$10.500</span>
+                            <button class="featured-btn" onclick="window.location.href='../html/menu.html'">Pedir Ahora</button>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section class="testimonials-section">
+        <div class="section-container">
+            <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"¡La mejor pizza de Mendoza! La masa es perfecta y los ingredientes súper frescos. Pedimos todas las semanas."</p>
+                    <p class="testimonial-author">- María González</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Excelente servicio y calidad. La entrega es rapidísima y siempre llega caliente. Totalmente recomendable."</p>
+                    <p class="testimonial-author">- Carlos Rodríguez</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Como italiano que soy, puedo confirmar que esta es auténtica pizza italiana. Me recuerda a mi tierra natal."</p>
+                    <p class="testimonial-author">- Giuseppe Rossi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección CTA (Call to Action) -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>¿Tienes hambre?</h2>
+            <p>Haz tu pedido ahora y recibe tu pizza en menos de 30 minutos</p>
+            <button class="cta-btn" onclick="window.location.href='../html/menu.html'">
+                Ordenar Ahora
+            </button>
         </div>
     </section>
 
