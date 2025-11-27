@@ -1,5 +1,6 @@
-// Carrito de compras
+// Variables globales
 let carrito = [];
+let usuarioLogueado = null;
 
 // Elementos del DOM
 const carritoModal = document.getElementById('carritoModal');
@@ -15,9 +16,46 @@ const totalPrice = document.getElementById('totalPrice');
 const checkoutBtn = document.getElementById('checkoutBtn');
 const perfilForm = document.getElementById('perfilForm');
 
+// Verificar sesión al cargar la página
+async function verificarSesion() {
+    try {
+        const response = await fetch('../PHP/verificar_sesion.php');
+        const data = await response.json();
+        
+        if (data.logueado) {
+            usuarioLogueado = data.usuario;
+            cargarDatosUsuario();
+        } else {
+            // No hay sesión activa
+            usuarioLogueado = null;
+        }
+    } catch (error) {
+        console.error('Error al verificar sesión:', error);
+        usuarioLogueado = null;
+    }
+}
+
+// Cargar datos del usuario en el perfil
+function cargarDatosUsuario() {
+    if (usuarioLogueado && perfilForm) {
+        document.getElementById('perfilNombre').value = usuarioLogueado.nombre || '';
+        document.getElementById('perfilEmail').value = usuarioLogueado.email || '';
+        document.getElementById('perfilTelefono').value = usuarioLogueado.telefono || '';
+        document.getElementById('perfilDireccion').value = usuarioLogueado.direccion || '';
+    }
+}
+
 // Agregar pizzas al carrito
 document.querySelectorAll('.add-btn').forEach(btn => {
     btn.addEventListener('click', () => {
+        // Verificar si hay sesión activa
+        if (!usuarioLogueado) {
+            if (confirm('⚠️ Debes iniciar sesión para agregar pizzas al carrito.\n\n¿Deseas ir al login ahora?')) {
+                window.location.href = '../html/login.html';
+            }
+            return;
+        }
+        
         const nombre = btn.getAttribute('data-name');
         const precio = parseInt(btn.getAttribute('data-price'));
         
@@ -100,21 +138,41 @@ function eliminarDelCarrito(nombre) {
 }
 
 // Abrir/cerrar modales
-carritoBtn.addEventListener('click', () => {
-    carritoModal.style.display = 'flex';
-});
+if (carritoBtn) {
+    carritoBtn.addEventListener('click', () => {
+        if (!usuarioLogueado) {
+            if (confirm('⚠️ Debes iniciar sesión para agregar pizzas al carrito.\n\n¿Deseas ir al login ahora?')) {
+                window.location.href = '../html/login.html';
+            }
+            return;
+        }
+        carritoModal.style.display = 'flex';
+    });
+}
 
-perfilBtn.addEventListener('click', () => {
-    perfilModal.style.display = 'flex';
-});
+if (perfilBtn) {
+    perfilBtn.addEventListener('click', () => {
+        if (!usuarioLogueado) {
+            if (confirm('⚠️ Debes iniciar sesión para agregar pizzas al carrito.\n\n¿Deseas ir al login ahora?')) {
+                window.location.href = '../html/login.html';
+            }
+            return;
+        }
+        perfilModal.style.display = 'flex';
+    });
+}
 
-closeCarrito.addEventListener('click', () => {
-    carritoModal.style.display = 'none';
-});
+if (closeCarrito) {
+    closeCarrito.addEventListener('click', () => {
+        carritoModal.style.display = 'none';
+    });
+}
 
-closePerfil.addEventListener('click', () => {
-    perfilModal.style.display = 'none';
-});
+if (closePerfil) {
+    closePerfil.addEventListener('click', () => {
+        perfilModal.style.display = 'none';
+    });
+}
 
 // Cerrar modales al hacer clic fuera
 window.addEventListener('click', (e) => {
@@ -127,36 +185,36 @@ window.addEventListener('click', (e) => {
 });
 
 // Finalizar pedido
-checkoutBtn.addEventListener('click', () => {
-    if (carrito.length > 0) {
-        alert('¡Pedido realizado con éxito! Total: ' + totalPrice.textContent);
-        carrito = [];
-        actualizarCarrito();
-        carritoModal.style.display = 'none';
-    }
-});
+if (checkoutBtn) {
+    checkoutBtn.addEventListener('click', () => {
+        if (carrito.length > 0) {
+            alert('¡Pedido realizado con éxito! Total: ' + totalPrice.textContent);
+            carrito = [];
+            actualizarCarrito();
+            carritoModal.style.display = 'none';
+        }
+    });
+}
 
 // Guardar perfil
-perfilForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    alert('✓ Perfil actualizado correctamente');
-    perfilModal.style.display = 'none';
-});
+if (perfilForm) {
+    perfilForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('✓ Perfil actualizado correctamente');
+        perfilModal.style.display = 'none';
+    });
+}
 
 // Logout
-logoutBtn.addEventListener('click', () => {
-    if (confirm('¿Estás seguro que deseas cerrar sesión?')) {
-        window.location.href = '../html/login.html';
-    }
-});
-
-// Smooth scroll para navegación
-document.querySelectorAll('.nav-menu a').forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const targetId = link.getAttribute('href');
-        document.querySelector(targetId).scrollIntoView({
-            behavior: 'smooth'
-        });
+if (logoutBtn) {
+    logoutBtn.addEventListener('click', () => {
+        if (confirm('¿Estás seguro que deseas cerrar sesión?')) {
+            window.location.href = '../PHP/logout.php';
+        }
     });
+}
+
+// Inicializar al cargar la página
+document.addEventListener('DOMContentLoaded', () => {
+    verificarSesion();
 });
