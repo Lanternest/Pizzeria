@@ -13,202 +13,207 @@
 </head>
 
 <body>
-    <!-- Barra de navegación -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="pizza-icon">🍕</span>
-                <span class="logo-text">Bella Italia</span>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="../html/index.html">Inicio</a></li>
-                <li><a href="../html/menu.html">Menú</a></li>
-                <li><a href="../html/nosotros.html">Nosotros</a></li>
-                <li><a href="../html/contacto.html">Contacto</a></li>
-                <li><a href="../html/ubicacion.html">Encontranos</a></li>
-            </ul>
-            <div class="nav-actions">
-                <button class="nav-btn" id="perfilBtn">
-                    <span>👤</span> Perfil
-                </button>
-                <button class="nav-btn cart-btn" id="carritoBtn">
-                    <span>🛒</span> Carrito
-                    <span class="cart-count" id="cartCount">0</span>
-                </button>
-                <button class="nav-btn logout-btn" id="logoutBtn">
-                    <span>🚪</span> Salir
-                </button>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Hero Section -->
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">La Auténtica Pizza Italiana</h1>
-            <p class="hero-subtitle">Ingredientes frescos, recetas tradicionales, sabor incomparable</p>
-            <button class="hero-btn" onclick="window.location.href='../html/menu.html'">
-                Ver Menú
-            </button>
-        </div>
-    </section>
 
-    <!-- Sección de Características -->
-    <section class="features-section">
-        <div class="section-container">
-            <h2 class="section-title">¿Por qué elegirnos?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🍅</div>
-                    <h3>Ingredientes Frescos</h3>
-                    <p>Seleccionamos los mejores ingredientes cada día para garantizar la máxima calidad y sabor en cada
-                        pizza.</p>
+        <!-- Barra de navegación -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <span class="pizza-icon">🍕</span>
+                    <span class="logo-text">Bella Italia</span>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">👨‍🍳</div>
-                    <h3>Maestros Pizzeros</h3>
-                    <p>Nuestro equipo de pizzeros expertos lleva más de 20 años perfeccionando el arte de la pizza
-                        italiana.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🚚</div>
-                    <h3>Entrega Rápida</h3>
-                    <p>Tu pizza caliente en tu puerta en menos de 30 minutos. Garantizado o tu pedido es gratis.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">⭐</div>
-                    <h3>Satisfacción Garantizada</h3>
-                    <p>Miles de clientes satisfechos nos respaldan. Tu felicidad es nuestra prioridad número uno.</p>
+                <ul class="nav-menu">
+                    <li><a href="../html/index.html">Inicio</a></li>
+                    <li><a href="../html/menu.html">Menú</a></li>
+                    <li><a href="../html/nosotros.html">Nosotros</a></li>
+                    <li><a href="../html/contacto.html">Contacto</a></li>
+                    <li><a href="../html/ubicacion.html">Encontranos</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="nav-btn" id="perfilBtn">
+                        <span>👤</span> Perfil
+                    </button>
+                    <button class="nav-btn cart-btn" id="carritoBtn">
+                        <span>🛒</span> Carrito
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                    <button class="nav-btn logout-btn" id="logoutBtn">
+                        <span>🚪</span> Salir
+                    </button>
                 </div>
             </div>
-        </div>
-    </section>
+        </nav>
 
-    <!-- Sección de Pizzas Destacadas - CARRUSEL -->
-    <section class="carousel-section">
-        <div class="section-container">
-            <h2 class="section-title">Pizzas Más Populares</h2>
-            <p class="section-subtitle">Haz click en cualquier pizza para ver el menú completo</p>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">La Auténtica Pizza Italiana</h1>
+                <p class="hero-subtitle">Ingredientes frescos, recetas tradicionales, sabor incomparable</p>
+                <button class="hero-btn" onclick="window.location.href='../html/menu.html'">
+                    Ver Menú
+                </button>
+            </div>
+        </section>
 
-            <div class="carousel-container">
-                <div class="carousel-wrapper">
-                    <div class="carousel-track">
-                        <!-- Slide 1 - Margarita -->
-                        <div class="carousel-slide">
-                            <img src="../img/pizza margarita.jpg" alt="Pizza Margarita" class="carousel-image">
-                            <div class="carousel-caption">
-                                <h3>Margarita Clásica</h3>
-                                <p>La original italiana con tomate, mozzarella y albahaca fresca</p>
+        <!-- Sección de Características -->
+        <section class="features-section">
+            <div class="section-container">
+                <h2 class="section-title">¿Por qué elegirnos?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <img src="../img/ingredientes.webp" alt="Ingredientes frescos" class="pizza-image">
+                        <h3>Ingredientes Frescos</h3>
+                        <p>Seleccionamos los mejores ingredientes cada día para garantizar la máxima calidad y sabor en
+                            cada
+                            pizza.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="../img/maestro pizzero.jpg" alt="Chef de pizza" class="pizza-image">
+                        <h3>Maestros Pizzeros</h3>
+                        <p>Nuestro equipo de pizzeros expertos lleva más de 20 años perfeccionando el arte de la pizza
+                            italiana.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="../img/entrega.png" alt="Entrega inmediata" class="pizza-image">
+                        <h3>Entrega Rápida</h3>
+                        <p>Tu pizza caliente en tu puerta en menos de 30 minutos. Garantizado o tu pedido es gratis.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="../img/calificacion.jpg" alt="Satisfacción" class="pizza-image">
+                        <h3>Satisfacción Garantizada</h3>
+                        <p>Miles de clientes satisfechos nos respaldan. Tu felicidad es nuestra prioridad número uno.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Pizzas Destacadas - CARRUSEL -->
+        <section class="carousel-section">
+            <div class="section-container">
+                <h2 class="section-title">Pizzas Más Populares</h2>
+                <p class="section-subtitle">Haz click en cualquier pizza para ver el menú completo</p>
+
+                <div class="carousel-container">
+                    <div class="carousel-wrapper">
+                        <div class="carousel-track">
+                            <!-- Slide 1 - Margarita -->
+                            <div class="carousel-slide">
+                                <img src="../img/pizza margarita.jpg" alt="Pizza Margarita" class="carousel-image">
+                                <div class="carousel-caption">
+                                    <h3>Margarita Clásica</h3>
+                                    <p>La original italiana con tomate, mozzarella y albahaca fresca</p>
+                                </div>
+                            </div>
+
+                            <!-- Slide 2 - Pepperoni -->
+                            <div class="carousel-slide">
+                                <img src="../img/pizza pepperoni.jpeg" alt="Pizza Pepperoni" class="carousel-image">
+                                <div class="carousel-caption">
+                                    <h3>Pepperoni Supreme</h3>
+                                    <p>Cargada con abundante pepperoni y doble queso mozzarella</p>
+                                </div>
+                            </div>
+
+                            <!-- Slide 3 - Cuatro Quesos -->
+                            <div class="carousel-slide">
+                                <img src="../img/pizza 4 quesos.webp" alt="Pizza Cuatro Quesos" class="carousel-image">
+                                <div class="carousel-caption">
+                                    <h3>Cuatro Quesos</h3>
+                                    <p>Combinación perfecta de mozzarella, gorgonzola, parmesano y provolone</p>
+                                </div>
+                            </div>
+
+                            <!-- Slide 4 - Napolitana -->
+                            <div class="carousel-slide">
+                                <img src="../img/pizza napolitana.jpg" alt="Pizza Napolitana" class="carousel-image">
+                                <div class="carousel-caption">
+                                    <h3>Napolitana</h3>
+                                    <p>Tomate, mozzarella, anchoas, ajo y orégano al estilo tradicional</p>
+                                </div>
+                            </div>
+
+                            <!-- Slide 5 - Vegetariana -->
+                            <div class="carousel-slide">
+                                <img src="../img/pizza vegetariana.jpg" alt="Pizza Vegetariana" class="carousel-image">
+                                <div class="carousel-caption">
+                                    <h3>Vegetariana</h3>
+                                    <p>Pimientos, champiñones, cebolla, aceitunas y tomate fresco</p>
+                                </div>
+                            </div>
+
+                            <!-- Slide 6 - Hawaiana -->
+                            <div class="carousel-slide">
+                                <img src="../img/pizza hawaiana.jpg" alt="Pizza Hawaiana" class="carousel-image">
+                                <div class="carousel-caption">
+                                    <h3>Hawaiana</h3>
+                                    <p>Jamón, piña, mozzarella y salsa de tomate. Un clásico único</p>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- Slide 2 - Pepperoni -->
-                        <div class="carousel-slide">
-                            <img src="../img/pizza pepperoni.jpeg" alt="Pizza Pepperoni" class="carousel-image">
-                            <div class="carousel-caption">
-                                <h3>Pepperoni Supreme</h3>
-                                <p>Cargada con abundante pepperoni y doble queso mozzarella</p>
-                            </div>
-                        </div>
-
-                        <!-- Slide 3 - Cuatro Quesos -->
-                        <div class="carousel-slide">
-                            <img src="../img/pizza 4 quesos.webp" alt="Pizza Cuatro Quesos" class="carousel-image">
-                            <div class="carousel-caption">
-                                <h3>Cuatro Quesos</h3>
-                                <p>Combinación perfecta de mozzarella, gorgonzola, parmesano y provolone</p>
-                            </div>
-                        </div>
-
-                        <!-- Slide 4 - Napolitana -->
-                        <div class="carousel-slide">
-                            <img src="../img/pizza napolitana.jpg" alt="Pizza Napolitana" class="carousel-image">
-                            <div class="carousel-caption">
-                                <h3>Napolitana</h3>
-                                <p>Tomate, mozzarella, anchoas, ajo y orégano al estilo tradicional</p>
-                            </div>
-                        </div>
-
-                        <!-- Slide 5 - Vegetariana -->
-                        <div class="carousel-slide">
-                            <img src="../img/pizza vegetariana.jpg" alt="Pizza Vegetariana" class="carousel-image">
-                            <div class="carousel-caption">
-                                <h3>Vegetariana</h3>
-                                <p>Pimientos, champiñones, cebolla, aceitunas y tomate fresco</p>
-                            </div>
-                        </div>
-
-                        <!-- Slide 6 - Hawaiana -->
-                        <div class="carousel-slide">
-                            <img src="../img/pizza hawaiana.jpg" alt="Pizza Hawaiana" class="carousel-image">
-                            <div class="carousel-caption">
-                                <h3>Hawaiana</h3>
-                                <p>Jamón, piña, mozzarella y salsa de tomate. Un clásico único</p>
-                            </div>
+                        <!-- Controles del carrusel -->
+                        <div class="carousel-controls">
+                            <button class="carousel-btn carousel-prev">‹</button>
+                            <button class="carousel-btn carousel-next">›</button>
                         </div>
                     </div>
 
-                    <!-- Controles del carrusel -->
-                    <div class="carousel-controls">
-                        <button class="carousel-btn carousel-prev">‹</button>
-                        <button class="carousel-btn carousel-next">›</button>
+                    <!-- Indicadores -->
+                    <div class="carousel-indicators">
+                        <button class="indicator active"></button>
+                        <button class="indicator"></button>
+                        <button class="indicator"></button>
+                        <button class="indicator"></button>
+                        <button class="indicator"></button>
+                        <button class="indicator"></button>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- Indicadores -->
-                <div class="carousel-indicators">
-                    <button class="indicator active"></button>
-                    <button class="indicator"></button>
-                    <button class="indicator"></button>
-                    <button class="indicator"></button>
-                    <button class="indicator"></button>
-                    <button class="indicator"></button>
+        <!-- Sección de Testimonios -->
+        <section class="testimonials-section">
+            <div class="section-container">
+                <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+                <div class="testimonials-grid">
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"¡La mejor pizza de Mendoza! La masa es perfecta y los ingredientes
+                            súper frescos. Pedimos todas las semanas."</p>
+                        <p class="testimonial-author">- María González</p>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"Excelente servicio y calidad. La entrega es rapidísima y siempre
+                            llega
+                            caliente. Totalmente recomendable."</p>
+                        <p class="testimonial-author">- Carlos Rodríguez</p>
+                    </article>
+                    <article class="testimonial-card">
+                        <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                        <p class="testimonial-text">"Como italiano que soy, puedo confirmar que esta es auténtica pizza
+                            italiana. Me recuerda a mi tierra natal."</p>
+                        <p class="testimonial-author">- Giuseppe Rossi</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Sección de Testimonios -->
-    <section class="testimonials-section">
-        <div class="section-container">
-            <h2 class="section-title">Lo que dicen nuestros clientes</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"¡La mejor pizza de Mendoza! La masa es perfecta y los ingredientes
-                        súper frescos. Pedimos todas las semanas."</p>
-                    <p class="testimonial-author">- María González</p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"Excelente servicio y calidad. La entrega es rapidísima y siempre llega
-                        caliente. Totalmente recomendable."</p>
-                    <p class="testimonial-author">- Carlos Rodríguez</p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                    <p class="testimonial-text">"Como italiano que soy, puedo confirmar que esta es auténtica pizza
-                        italiana. Me recuerda a mi tierra natal."</p>
-                    <p class="testimonial-author">- Giuseppe Rossi</p>
-                </div>
+        <!-- Sección CTA (Call to Action) -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>¿Tienes hambre?</h2>
+                <p>Haz tu pedido ahora y recibe tu pizza en menos de 30 minutos</p>
+                <button class="cta-btn" onclick="window.location.href='../html/menu.html'">
+                    Ordenar Ahora
+                </button>
             </div>
-        </div>
-    </section>
-
-    <!-- Sección CTA (Call to Action) -->
-    <section class="cta-section">
-        <div class="cta-content">
-            <h2>¿Tienes hambre?</h2>
-            <p>Haz tu pedido ahora y recibe tu pizza en menos de 30 minutos</p>
-            <button class="cta-btn" onclick="window.location.href='../html/menu.html'">
-                Ordenar Ahora
-            </button>
-        </div>
-    </section>
+        </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2024 Bella Italia. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Bella Italia. Todos los derechos reservados.</p>
     </footer>
 
     <!-- Modal Carrito -->
