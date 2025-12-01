@@ -12,7 +12,7 @@ if (isset($_COOKIE[session_name()])) {
     setcookie(session_name(), '', time()-3600, '/');
 }
 
-// Redirigir al login
-header("Location: ../html/login.html");
+// Redirigir al index
+header("Location: ../html/index.html");
 exit();
 ?>

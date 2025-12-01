@@ -59,14 +59,6 @@
                         <div class="stat-number">35+</div>
                         <div class="stat-label">Años de experiencia</div>
                     </div>
-                    <div class="stat-card">
-                        <div class="stat-number">50k+</div>
-                        <div class="stat-label">Clientes felices</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Ingredientes frescos</div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -74,36 +66,15 @@
             <div class="about-content">
                 <div class="about-text">
                     <h3>Mision</h3>
-                    <p>Facilis, ipsa voluptatibus repellendus a illo
-                        ipsam ad! Iure repudiandae nulla explicabo dolorem. Dolores soluta magnam reprehenderit amet hic
-                        consequatur vel natus, unde, placeat voluptates labore adipisci fugit doloribus? Ratione fugiat
-                        vero
-                        obcaecati dolorum incidunt at eius optio magni voluptas perspiciatis, pariatur odio quisquam
-                        quam illum
-                        eum error minima adipisci exercitationem possimus magnam voluptates illo? Numquam ducimus porro
-                        dolorem!
-                        Illum porro amet totam neque provident repellat odio adipisci. <br><br>Sapiente ad sed
-                        consectetur repudiandae
-                        harum deserunt laborum magni recusandae numquam ratione, error ea quibusdam voluptate voluptates
-                        sequi
-                        porro, enim voluptatum ipsam asperiores commodi, maxime omnis quasi voluptatibus? Deserunt
-                        reiciendis
-                        expedita quidem nihil aspernatur, commodi recusandae perferendis necessitatibus voluptate
-                        placeat ullam
-                        hic temporibus quo nesciunt numquam doloremque nemo iure.</p>
+                    <p>En Bella Italia nos dedicamos a ofrecer pizzas artesanales elaboradas con ingredientes
+                        frescos y de la más alta calidad. Buscamos brindar una experiencia gastronómica única, donde
+                        cada bocado transmita nuestra pasión por la cocina y el placer de compartir. Trabajamos con
+                        dedicación para superar las expectativas de nuestros clientes en sabor, servicio y ambiente.</p>
                 </div>
                 <div class="about-stats">
                     <div class="stat-card">
-                        <div class="stat-number">35+</div>
-                        <div class="stat-label">Años de experiencia</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">50k+</div>
-                        <div class="stat-label">Clientes felices</div>
-                    </div>
-                    <div class="stat-card">
                         <div class="stat-number">100%</div>
-                        <div class="stat-label">Ingredientes frescos</div>
+                        <div class="stat-label">Auténtico sabor</div>
                     </div>
                 </div>
             </div>
@@ -112,22 +83,14 @@
             <div class="about-content">
                 <div class="about-text">
                     <h3>Vision</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos optio perferendis nostrum
-                        aspernatur officia recusandae omnis accusantium aperiam in distinctio! Quisquam molestiae
-                        blanditiis assumenda, doloremque eveniet at quia in tempora.</p>
+                    <p>Convertirnos en la pizzería favorita de la comunidad, reconocida por la excelencia de nuestros
+                        productos, la innovación en nuestros sabores y el trato cercano con cada cliente. Aspiramos a
+                        expandirnos sin perder nuestra esencia, siendo un lugar donde siempre se elige volver.</p>
                 </div>
                 <div class="about-stats">
                     <div class="stat-card">
-                        <div class="stat-number">35+</div>
-                        <div class="stat-label">Años de experiencia</div>
-                    </div>
-                    <div class="stat-card">
                         <div class="stat-number">50k+</div>
                         <div class="stat-label">Clientes felices</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">100%</div>
-                        <div class="stat-label">Ingredientes frescos</div>
                     </div>
                 </div>
             </div>
@@ -136,19 +99,15 @@
             <div class="about-content">
                 <div class="about-text">
                     <h3>Valores</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia cumque odit at placeat animi
-                        unde minima facilis recusandae aliquam, nulla nihil quaerat eius, harum veniam consequuntur
-                        reiciendis nam doloremque esse!</p>
+                    <ul>
+                        <li>Calidad: Usamos ingredientes seleccionados y procesos artesanales que garantizan el mejor sabor.</li>
+                        <li>Pasión: Hacemos pizzas porque nos encanta, y eso se nota en cada detalle.</li>
+                        <li>Tradición & Innovación: Honramos las recetas clásicas mientras creamos nuevas propuestas.</li>
+                        <li>Compromiso con el cliente: Queremos que cada persona se sienta como en casa.</li>
+                        <li>Responsabilidad: Impulsamos prácticas que cuiden a las personas y al entorno.</li>
+                    </ul>
                 </div>
                 <div class="about-stats">
-                    <div class="stat-card">
-                        <div class="stat-number">35+</div>
-                        <div class="stat-label">Años de experiencia</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">50k+</div>
-                        <div class="stat-label">Clientes felices</div>
-                    </div>
                     <div class="stat-card">
                         <div class="stat-number">100%</div>
                         <div class="stat-label">Ingredientes frescos</div>
@@ -163,7 +122,57 @@
         <p>&copy; 2025 Bella Italia. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="../js/common.js"></script>
+    <!-- Modal Carrito -->
+    <div class="modal" id="carritoModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🛒 Mi Carrito</h2>
+                <button class="close-btn" id="closeCarrito">&times;</button>
+            </div>
+            <div class="modal-body" id="carritoItems">
+                <p class="empty-cart">Tu carrito está vacío</p>
+            </div>
+            <div class="modal-footer">
+                <div class="total-section">
+                    <span>Total:</span>
+                    <span class="total-price" id="totalPrice">$0</span>
+                </div>
+                <button class="checkout-btn" id="checkoutBtn">Finalizar Pedido</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Perfil -->
+    <div class="modal" id="perfilModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>👤 Mi Perfil</h2>
+                <button class="close-btn" id="closePerfil">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="perfilForm">
+                    <div class="form-group">
+                        <label for="perfilNombre">Nombre completo</label>
+                        <input type="text" id="perfilNombre" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="perfilEmail">Email</label>
+                        <input type="email" id="perfilEmail" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="perfilTelefono">Teléfono</label>
+                        <input type="tel" id="perfilTelefono" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="perfilDireccion">Dirección</label>
+                        <input type="text" id="perfilDireccion" value="">
+                    </div>
+                    <button type="submit" class="btn-submit">Guardar Cambios</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../js/index.js"></script>
 </body>
 
 </html>

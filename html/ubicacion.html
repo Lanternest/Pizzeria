@@ -54,6 +54,56 @@
         <p>&copy; 2025 Bella Italia. Todos los derechos reservados.</p>
     </footer>
     
-    <script src="../js/common.js"></script>
+    <!-- Modal Carrito -->
+    <div class="modal" id="carritoModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>🛒 Mi Carrito</h2>
+                <button class="close-btn" id="closeCarrito">&times;</button>
+            </div>
+            <div class="modal-body" id="carritoItems">
+                <p class="empty-cart">Tu carrito está vacío</p>
+            </div>
+            <div class="modal-footer">
+                <div class="total-section">
+                    <span>Total:</span>
+                    <span class="total-price" id="totalPrice">$0</span>
+                </div>
+                <button class="checkout-btn" id="checkoutBtn">Finalizar Pedido</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Perfil -->
+    <div class="modal" id="perfilModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>👤 Mi Perfil</h2>
+                <button class="close-btn" id="closePerfil">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="perfilForm">
+                    <div class="form-group">
+                        <label for="perfilNombre">Nombre completo</label>
+                        <input type="text" id="perfilNombre" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="perfilEmail">Email</label>
+                        <input type="email" id="perfilEmail" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="perfilTelefono">Teléfono</label>
+                        <input type="tel" id="perfilTelefono" value="">
+                    </div>
+                    <div class="form-group">
+                        <label for="perfilDireccion">Dirección</label>
+                        <input type="text" id="perfilDireccion" value="">
+                    </div>
+                    <button type="submit" class="btn-submit">Guardar Cambios</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../js/index.js"></script>
 </body>
 </html>

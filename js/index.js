@@ -45,98 +45,6 @@ function cargarDatosUsuario() {
     }
 }
 
-// Agregar pizzas al carrito
-document.querySelectorAll('.add-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-        // Verificar si hay sesión activa
-        if (!usuarioLogueado) {
-            if (confirm('⚠️ Debes iniciar sesión para agregar pizzas al carrito.\n\n¿Deseas ir al login ahora?')) {
-                window.location.href = '../html/login.html';
-            }
-            return;
-        }
-        
-        const nombre = btn.getAttribute('data-name');
-        const precio = parseInt(btn.getAttribute('data-price'));
-        
-        agregarAlCarrito(nombre, precio);
-        
-        // Animación del botón
-        btn.textContent = '✓ Agregado';
-        btn.style.background = '#4caf50';
-        setTimeout(() => {
-            btn.textContent = 'Agregar';
-            btn.style.background = '';
-        }, 1000);
-    });
-});
-
-// Función para agregar al carrito
-function agregarAlCarrito(nombre, precio) {
-    const itemExistente = carrito.find(item => item.nombre === nombre);
-    
-    if (itemExistente) {
-        itemExistente.cantidad++;
-    } else {
-        carrito.push({ nombre, precio, cantidad: 1 });
-    }
-    
-    actualizarCarrito();
-}
-
-// Función para actualizar el carrito
-function actualizarCarrito() {
-    // Actualizar contador
-    const totalItems = carrito.reduce((sum, item) => sum + item.cantidad, 0);
-    cartCount.textContent = totalItems;
-    cartCount.style.display = totalItems > 0 ? 'flex' : 'none';
-    
-    // Actualizar contenido del modal
-    if (carrito.length === 0) {
-        carritoItems.innerHTML = '<p class="empty-cart">Tu carrito está vacío</p>';
-        totalPrice.textContent = '$0';
-        checkoutBtn.disabled = true;
-    } else {
-        carritoItems.innerHTML = carrito.map(item => `
-            <div class="cart-item">
-                <div class="cart-item-info">
-                    <h4>${item.nombre}</h4>
-                    <p>$${item.precio.toLocaleString()} x ${item.cantidad}</p>
-                </div>
-                <div class="cart-item-actions">
-                    <button class="qty-btn" onclick="cambiarCantidad('${item.nombre}', -1)">-</button>
-                    <span>${item.cantidad}</span>
-                    <button class="qty-btn" onclick="cambiarCantidad('${item.nombre}', 1)">+</button>
-                    <button class="remove-btn" onclick="eliminarDelCarrito('${item.nombre}')">🗑️</button>
-                </div>
-            </div>
-        `).join('');
-        
-        const total = carrito.reduce((sum, item) => sum + (item.precio * item.cantidad), 0);
-        totalPrice.textContent = `$${total.toLocaleString()}`;
-        checkoutBtn.disabled = false;
-    }
-}
-
-// Cambiar cantidad
-function cambiarCantidad(nombre, cambio) {
-    const item = carrito.find(i => i.nombre === nombre);
-    if (item) {
-        item.cantidad += cambio;
-        if (item.cantidad <= 0) {
-            eliminarDelCarrito(nombre);
-        } else {
-            actualizarCarrito();
-        }
-    }
-}
-
-// Eliminar del carrito
-function eliminarDelCarrito(nombre) {
-    carrito = carrito.filter(item => item.nombre !== nombre);
-    actualizarCarrito();
-}
-
 // Abrir/cerrar modales
 if (carritoBtn) {
     carritoBtn.addEventListener('click', () => {
@@ -199,7 +107,7 @@ if (checkoutBtn) {
 // Guardar perfil
 if (perfilForm) {
     perfilForm.addEventListener('submit', (e) => {
-        e.preventDefault();
+        // e.preventDefault();
         alert('✓ Perfil actualizado correctamente');
         perfilModal.style.display = 'none';
     });
