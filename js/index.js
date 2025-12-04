@@ -107,7 +107,7 @@ if (checkoutBtn) {
 // Guardar perfil
 if (perfilForm) {
     perfilForm.addEventListener('submit', (e) => {
-        // e.preventDefault();
+        e.preventDefault();
         alert('✓ Perfil actualizado correctamente');
         perfilModal.style.display = 'none';
     });

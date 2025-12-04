@@ -611,7 +611,7 @@ input:focus, select:focus {
 }
 
 .features-section {
-    padding: 80px 2rem;
+    padding: 50px 2rem;
     background: white;
 }
 
@@ -653,7 +653,7 @@ input:focus, select:focus {
 
 /* Featured Section */
 .featured-section {
-    padding: 80px 2rem;
+    padding: 50px 2rem;
     background: #f9f9f9;
 }
 
@@ -725,7 +725,7 @@ input:focus, select:focus {
 
 /* Testimonials Section */
 .testimonials-section {
-    padding: 80px 2rem;
+    padding: 50px 2rem;
     background: white;
 }
 
@@ -841,7 +841,6 @@ input:focus, select:focus {
     height: 700px;
     border: none;
     align-items: center;
-    /* border-radius: 15px; */
 }
 
 /* ===== CARRUSEL DE PIZZAS ===== */
